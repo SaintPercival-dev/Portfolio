@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <!-- Introductory Name-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                KingDavid <span>Agiode</span>
+            </div>
+            <!-- Links -->
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Service</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+            </div>
+        </div>
+        <!-- Dropdrop responsive link -->
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Skills</a>
+                <a href="">Service</a>
+                <a href="">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Main container, containing Name and social media platforms-->
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>KingDavid</span></h1>
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900" class="typewriter">I'm an aspiring <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am a passionate and enthusiastic Software Engineering student </p>
+                <div class="social-links">
+                    <a data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Download CV</button>
+                </div>
+            </div>
+            <!-- Homepage Image-->
+            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="homepage.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="about-section" id="about">
+        <h2 class="about-title" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">About</h2>
+
+        <div>
+            <h2 class="about-initial" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">I am <span>KingDavid,</span></h2>
+            <p class="about-text" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">I am a 100 level SoftwareEngineering student of Babcock University. I am a dedicated and passionate 
+                SoftwareEngineering student, though i aim to be a cyber security analyst, i am really enjoying my SoftwareEngineering. As
+                i hope to gather the necessary skills needed to achieve my goals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section-->
+     <section class="skills-section" id="skills">
+        <h2 class="skills-title" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">Skills</h2>
+        <p class="skills-text" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">I have basic knowldge in HTML, CSS, JavaScript. But i am on the journey of learning Java, Python, react, networking, penetration testing, among others.</p>
+     </section>
+
+     <!-- Services Section-->
+      <section class="services-section" id="services">
+        <h2 class="services-title" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">Services</h2>
+        <p class="services-text" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100"> I offer 
+            <br>
+            <ul class="services-list" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                <li>Frontend Development skills</li>
+                <li>Good work ethic</li>
+                <li>Driving skills</li>
+                <li>Good communication skills</li>
+                <li>Listening skill</li>
+            </ul>
+        </p>
+      </section>
+
+      <!-- Contact Section-->
+      <section class="contact-section" id="contact">
+        <h2 class="contact-title" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">Contacts</h2>
+        <form class="contact-form" action="index.php" method="post" enctype="multipart/form-data" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+            <label for="text">Full Name:</label>
+            <input type="text" id="text" placeholder="Please enter your full name" size="40px" required><br>
+
+            <label for="tel">Phone Number:</label>
+            <input type="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+234-814-256-6998" required>
+
+            <br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="5" cols="40"></textarea><br>
+
+            <input type="reset" id="reset">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+      </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
